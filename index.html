@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Time Counter</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="timer">
+            <p>
+                <span class="mins">00</span>:<span class="seconds">00</span>:<span class="tens">00</span><br>
+            </p><br>
+            </div>
+            <div class="btn">
+                <button class="btn-start">Start</button>
+                <button class="btn-stop">Stop</button>
+                <button class="btn-reset">Reset</button>
+            </div>
+            <div class="lap">
+                <button class="btn-lap">lap</button>
+                <div class="history" >
+                    <div class="laphist">
+                        <p class="lapnum" id="new-lap"></p>
+                        <p class="laptimer" id="new-time"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

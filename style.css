@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-image: url('photo1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+}
+.timer{
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+    display: inline-block;
+    letter-spacing: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: rgba(122, 173, 239, 0.11);
+    font-size: 60px;
+    color: white;
+    backdrop-filter: blur(8px);
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.timer p{
+    margin-top: 60px;
+    margin-left: 55px;
+}
+
+@keyframes shine{
+    0%,
+    100%{
+        box-shadow: 0px 0px 32px -12px rgba(247, 237, 209, 0.504);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(230, 224, 200, 0.504);
+    }
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    height: 30px;
+    width: 80px;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.416);
+    background-color: rgba(255, 255, 255, 0);
+}
+button:hover,
+button:focus{
+    border-color: rgb(240, 230, 140);
+    color:rgb(240, 230, 140);
+    box-shadow: 0px 6px 27px -12px rgb(241, 235, 181);
+}
+.lap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lap button{
+    border-radius:50%;
+    font-weight: bold;
+}
+.lap button:hover{
+    border-color: rgb(243, 76, 42);
+    color:rgb(228, 47, 11);
+    box-shadow: 0px 6px 27px -12px rgba(239, 28, 25);
+}
+.history{
+    min-height: 20px;
+    width: 350px;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.073);
+    font-size: 18px;
+}
+.laphist{
+    display: flex;
+    flex-direction: row;
+}
+.lapnum{
+    margin-left: 10px;
+}
+.laptimer{
+    margin-left: 95px;
+}
